@@ -1,0 +1,509 @@
+
+
+				/* INI STYLE CSS PORTOFOLIO */
+
+
+				*, html, body {
+					margin: 0;
+					padding: 0;
+					box-sizing: border-box;
+					font-family: Helvetica;
+					scroll-behavior: smooth;
+				}
+				
+				header {
+					background: #1A2238;
+					color: aliceblue;
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					align-items: center;
+					gap: 10px;
+				}
+				
+				.logo {
+					margin-right: auto;
+					display: flex;
+					gap: 6px;
+					padding-bottom: 25px;
+					padding-top: 25px;
+				}
+				
+				.logo-img {
+					width: 35px;
+					height: 35px;
+					margin-left: 10px;
+				}
+				
+				.logo-title {
+					cursor: pointer;
+					transition: all 2s ease 0s;
+					margin-left: 20px;
+				}
+				
+				.logo:hover {
+					color: burlywood;
+				}
+				
+				.btn-cta {
+					margin-right: 10px;
+					border: none;
+					font-size: 20px;
+					padding: 6px 12px;
+					background: burlywood;
+					color: aliceblue;
+					border-radius: 8px;
+					cursor: pointer;
+				}
+
+				
+
+				nav ul{
+					display: flex;
+					padding: 20px;
+				}
+				
+				li {
+					list-style-type: none;
+					padding: 10px;
+				}
+				
+				li a {
+					transition: all .5s ease 0s;
+					display: inline-block;
+				}
+				
+				li a:hover {
+					color: burlywood;
+				}
+				
+				a {
+					color: aliceblue;
+					text-decoration: none;
+				}
+				
+				.container {
+					max-width: 1200px;
+					margin: 0 auto;
+					padding: 70px 0;
+				}
+				
+				.intro {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					gap: 10px;
+					text-align: center;
+				}
+				
+				.title {
+					font-size: 20px;
+					font-weight: bold;
+				}
+				
+				.description {
+					font-size: 25px;
+					font-weight: bolder;
+					padding-top: 25px;
+					padding-bottom: 35px;
+				}
+				
+				.img-foto {
+					width: 100%;
+					height: auto;
+					padding: 10px;
+					max-width: 500px;
+				}
+				
+				/* .parallax {
+					background-image: url('background.jpg');
+					background-attachment: fixed;
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: cover;
+					height: 100vh;
+					
+				} */
+				
+				.tentang {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-direction: column;
+					background: #1A2238;
+					color: #eaeaea;
+					padding: 40px;
+				}
+				
+				.mt-10 {
+					margin-top: 20px;
+				}
+				
+				.card {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					align-items: center;
+					gap: 8px;
+				}
+				
+				.card-item {
+					text-align: center;
+					width: 25%;
+					min-height: 200px;
+					max-height: 300px;
+					background: aliceblue;
+					color: #222;
+					padding: 24px;
+					box-shadow: 2px 5px 5px 1px rgba(0,0,0,0.5);
+				}
+				
+				.card-title a{
+					font-size: 18px;
+					font-weight: bolder;
+					color: black;
+				}
+				
+				.card-description {
+					font-size: 14px;
+					margin-top: 4px;
+				}
+				
+				.fa-brands {
+					width: 75px;
+					height: 75px;
+					margin: 10px;
+					padding: 4px;
+				}
+				
+				footer {
+					padding: 20px;
+					text-align: center;
+					background: #1A2238;
+					color: aliceblue;
+				}
+
+
+
+
+
+				 
+				@media screen and (max-width: 500px) {
+					.card {
+						flex-direction: column;
+						gap: 0;
+					}
+					.card-item {
+						width: 100%;
+						opacity: 0.9;
+					}
+					
+					.container {
+						width: 100%;
+						padding: 0;
+					}
+					
+					.intro {
+						margin-top: 20px;
+					}
+					
+					.img-foto {
+						padding: 0;
+					}
+					
+					nav {
+						position: fixed;
+						bottom: 0;
+						width: 100%;
+						background: #1A2238;
+						z-index: 9;
+				  }
+
+        }
+
+
+
+
+
+
+/* 
+
+			/* Galaxy Fold *
+				@media screen and (max-width: 359px){
+					footer {
+					margin-top:46vh;
+					}
+					.logo-title{
+						font-size:20px;
+						margin-top:2px;
+					}
+					.logo-img{
+						width:25px;
+						height:25px;
+					}
+					.btn-cta{
+					font-size: 15px;
+					padding: 6px 11px;
+					}
+					footer .title{
+						font-size: 16px;
+					}
+
+				}
+
+				
+				/* Galaxy S8+ *
+				@media screen and (min-width: 360px){
+					footer {
+					margin-top:25vh;
+					margin-bottom:10vh;
+							}
+					.logo-title{
+						font-size:20px;
+						margin-top:2px;
+					}
+					.logo-img{
+						width:25px;
+						height:25px;
+					}
+					.btn-cta{
+					font-size: 15px;
+					padding: 6px 11px;
+					}
+					footer .title{
+						font-size:18px;
+					}
+					} 
+
+
+
+
+				/* iphone SE *
+				@media screen and (min-width: 375px){
+					footer {
+					margin-top:39vh;
+				  }
+				  .logo-title{
+					font-size:30px;
+					margin-top: 2px;
+				}
+				.logo-img{
+					width: 35px;
+					height:35px;
+				}
+				.btn-cta{
+					font-size: 20px;
+					padding: 6px 12px;
+				}
+				footer .title{
+					font-size:19px;
+				}
+				} 
+				
+
+				/* iphone 13 start*
+				 @media screen and (min-width: 390px){
+					footer {
+					margin-top:4vh;
+					margin-bottom: 9vh;
+					padding: 3vh;
+				  }
+				  .logo-title{
+					font-size:30px;
+					margin-top: 2px;
+				}
+				.logo-img{
+					width: 35px;
+					height:35px;
+				}
+				.btn-cta{
+					font-size: 20px;
+					padding: 6px 12px;
+				}
+				footer .title{
+					font-size:20px;
+				}
+				}  
+							
+
+
+				
+				  @media screen and (min-width:400px) {
+					footer {
+					  margin-bottom:9vh;
+					  margin-top: 8vh;
+					}
+					  .parallax{
+				  background-image: url('background.jpg');
+					background-attachment: fixed;
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: cover;
+					height: 100vh;
+				  }
+				}
+
+
+
+
+				/* S20 Ultra *
+				@media screen and (min-width:412px) {
+					footer {
+					  margin-bottom:8vh;
+					  margin-top: -4vh;
+					}
+				}
+
+
+					/* Iphone Xr *
+				@media screen and (min-width:414px) {
+					footer {
+					  margin-top:-2vh;
+					  margin-bottom:7vh;
+					  }
+					  .btn-cta{
+						font-size: 20px;
+						padding: 6px 12px;
+					}
+					}
+
+
+
+				@media screen and (min-width:500px) {
+				  footer {
+					margin-top:0;
+					margin-bottom:0;
+					}
+						.parallax{
+							background-image: url('background.jpg');
+							  background-attachment: fixed;
+							  background-position: center;
+							  background-repeat: no-repeat;
+							  background-size: cover;
+							  height: 100vh;
+				  }
+				}
+
+				
+				@media screen and (min-width:667px) {
+					footer {
+					  margin-top:65vh;
+					  margin-bottom:0;
+					  }
+						  .parallax{
+							  background-image: none;
+				  }
+				}
+
+				@media screen and (min-width:717px) {
+					footer {
+					  margin-top: 10vh;
+					  margin-bottom:0;
+					  }
+					  .parallax{
+						background-image: url('background.jpg');
+						  background-attachment: fixed;
+						  background-position: center;
+						  background-repeat: no-repeat;
+						  background-size: cover;
+						  height: 100vh;
+					}
+				}
+
+
+				/* LANDSCAPE START *
+				@media screen and (min-width:720px) {
+					footer {
+						margin-top: 47vh;
+						margin-bottom:0;
+						}
+						.parallax{
+					background-image: none;
+					  }
+					} 
+
+				@media screen and (min-width:740px) {
+					footer {
+					margin-top: 70vh;
+					margin-bottom:0;
+					}
+				}
+
+				/* Ipad Mini 
+				@media screen and (min-width:768px) {
+					footer {
+					margin-top: -8vh;
+					margin-bottom:0;
+					}
+					.card-item{
+						margin-top:15vh;
+					}
+				}
+
+
+				/* Ipad Air 
+				@media screen and (min-width:820px) {
+					footer {
+					margin-top: -8vh;
+					margin-bottom:0;
+					}
+					.card-item{
+						margin-top:20vh;
+					}
+					.parallax{
+						background-image: url('background.jpg');
+						  background-attachment: fixed;
+						  background-position: center;
+						  background-repeat: no-repeat;
+						  background-size: cover;
+						  height: 100vh;
+					}
+				}	
+ 
+				@media screen and (min-width:844px) {
+					footer {
+					margin-top: 90vh;
+					margin-bottom:0;
+					}
+					.parallax{
+						background-image: none;
+					}
+				}
+
+				@media screen and (min-width:896px) {
+					footer {
+					margin-top: 90vh;
+					margin-bottom:0;
+					}
+				}
+
+				@media screen and (min-width:910px) {
+					footer {
+					margin-top: 90vh;
+					margin-bottom:0;
+					}
+				} 
+
+				@media screen and (min-width:1000px) {
+					footer {
+					margin-top: 0;
+					margin-bottom:0;
+					}
+					.parallax{
+						background-image: url('background.jpg');
+						  background-attachment: fixed;
+						  background-position: center;
+						  background-repeat: no-repeat;
+						  background-size: cover;
+						  height: 100vh;
+				} 
+				.card-item{
+					margin-top: 0;
+				}
+			}
+
+ */
+
+				
+
